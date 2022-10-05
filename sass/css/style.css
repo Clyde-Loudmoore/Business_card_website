@@ -170,3 +170,12 @@ body {
   text-align: center;
   color: #727272;
 }
+.main__projects {
+  background: #34547A;
+}
+.main__projects-items {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
