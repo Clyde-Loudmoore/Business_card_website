@@ -147,11 +147,14 @@ body
 
     &__skills
         &-my
-            margin-top: 102px
+            height: 653px
             display: flex
             justify-content: space-between
             align-items: center
             @media (min-width: 320px) and (max-width: 1279px)
+                height: auto
+                margin-top: 82px
+                margin-bottom: 103px
                 flex-direction: column-reverse
         &-headline
             font: $fontA
@@ -169,18 +172,62 @@ body
             @media (min-width: 320px) and (max-width: 1279px)
                 width: 339px
                 height: 275px
-    &__exp-block
-        display: flex
-    &__exp-blue
-        width: 349px
-        height: 4px
-        background: #34547A
-        transform: rotate(-0.06deg)
-        @media (min-width: 320px) and (max-width: 1279px)
-            width: 266px
-    &__exp-grey
-        width: 96px
-        height: 4px
-        background: #C4C4C4
-        @media (min-width: 320px) and (max-width: 1279px)
-            width: 72px
+    &__exp
+        &-block
+            display: flex
+        &-blue
+            width: 349px
+            height: 4px
+            background: #34547A
+            transform: rotate(-0.06deg)
+            @media (min-width: 320px) and (max-width: 1279px)
+                width: 266px
+        &-grey
+            width: 96px
+            height: 4px
+            background: #C4C4C4
+            @media (min-width: 320px) and (max-width: 1279px)
+                width: 72px
+
+    &__work
+        background: #EEEFF1
+        &-items
+            padding-top: 70px
+            height: 1004px
+            display: flex
+            flex-direction: column
+            align-items: center
+            @media (min-width: 320px) and (max-width: 1279px)
+                height: auto
+        &-headline
+            font: $fontA
+            line-height: 38px
+            text-align: center
+            color: #000000
+        &-text
+            font: $fontB
+            line-height: 120%
+            text-align: center
+            color: #727272
+            margin: 30px
+        &-images
+            position: relative
+        &-img
+            width: 1110px
+            height: 600px
+            @media (min-width: 320px) and (max-width: 1279px)
+                width: 339px
+                height: 185px
+        &-png
+            position: absolute
+            left: 505px
+            right: 505px
+            top: 250px
+            bottom: 250px
+            @media (min-width: 320px) and (max-width: 1279px)
+                width: 75px
+                height: 75px
+                left: 131px
+                right: 133px
+                top: 55px
+                bottom: 55px
