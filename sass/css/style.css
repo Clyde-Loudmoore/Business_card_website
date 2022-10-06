@@ -406,6 +406,9 @@ body {
 .taskboard__board {
   position: relative;
 }
+.taskboard__board:hover {
+  opacity: 0.7;
+}
 .taskboard__board:hover .taskboard__board-overlay {
   display: block;
 }
