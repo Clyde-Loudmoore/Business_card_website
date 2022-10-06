@@ -183,6 +183,7 @@ body {
 @media (min-width: 320px) and (max-width: 1279px) {
   .main__projects-items {
     height: auto;
+    width: auto;
     flex-wrap: wrap;
   }
 }
@@ -192,7 +193,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 1279px) {
   .main__projects-img {
-    margin: 45px 18px;
+    margin: 45px auto;
   }
 }
 .main__skills-my {
@@ -245,7 +246,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 1279px) {
   .main__exp-blue {
-    width: 266px;
+    width: 250px;
   }
 }
 .main__exp-grey {
@@ -255,14 +256,14 @@ body {
 }
 @media (min-width: 320px) and (max-width: 1279px) {
   .main__exp-grey {
-    width: 72px;
+    width: 60px;
   }
 }
 .main__work {
   background: #EEEFF1;
 }
 .main__work-items {
-  padding-top: 70px;
+  padding-top: 65px;
   height: 1004px;
   display: flex;
   flex-direction: column;
@@ -322,16 +323,50 @@ body {
   display: flex;
   align-items: center;
 }
+@media (min-width: 320px) and (max-width: 1279px) {
+  .taskboard {
+    height: auto;
+  }
+}
 .taskboard__rotate {
   display: flex;
   flex-wrap: wrap;
+}
+@media (min-width: 320px) and (max-width: 367px) {
+  .taskboard__rotate {
+    justify-content: center;
+  }
 }
 .taskboard__board {
   width: 476px;
   height: 476px;
 }
+@media (min-width: 320px) and (max-width: 367px) {
+  .taskboard__board {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (min-width: 368px) and (max-width: 1279px) {
+  .taskboard__board {
+    width: 184px;
+    height: 184px;
+  }
+}
 .taskboard__board img {
   width: 476px;
   height: 476px;
   margin: 0;
+}
+@media (min-width: 320px) and (max-width: 367px) {
+  .taskboard__board img {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (min-width: 368px) and (max-width: 1279px) {
+  .taskboard__board img {
+    width: 184px;
+    height: 184px;
+  }
 }
