@@ -129,6 +129,7 @@ body
             line-height: 26px
             text-align: center
             color: #727272
+            margin: 0 30px
 
     &__projects
         background: #34547A
@@ -171,7 +172,10 @@ body
         &-photo img
             width: 555px
             height: 450px
-            @media (min-width: 320px) and (max-width: 1279px)
+            @media (min-width: 320px) and (max-width: 342px)
+                width: 320px
+                height: 256px
+            @media (min-width: 343px) and (max-width: 1279px)
                 width: 339px
                 height: 275px
     &__exp
@@ -217,7 +221,10 @@ body
         &-img
             width: 1110px
             height: 600px
-            @media (min-width: 320px) and (max-width: 1279px)
+            @media (min-width: 320px) and (max-width: 342px)
+                width: 320px
+                height: 166px
+            @media (min-width: 343px) and (max-width: 1279px)
                 width: 339px
                 height: 185px
         &-png
@@ -226,7 +233,13 @@ body
             right: 505px
             top: 250px
             bottom: 250px
-            @media (min-width: 320px) and (max-width: 1279px)
+            @media (min-width: 320px) and (max-width: 342px)
+                width: 56px
+                height: 56px
+                left: 130px
+                right: 50px
+                top: 60px
+            @media (min-width: 343px) and (max-width: 1279px)
                 width: 75px
                 height: 75px
                 left: 131px
@@ -240,27 +253,93 @@ body
     align-items: center
     @media (min-width: 320px) and (max-width: 1279px)
         height: auto
+        margin: 34px 0
     &__rotate
         display: flex
         flex-wrap: wrap
-        @media (min-width: 320px) and (max-width: 367px)
+        @media (min-width: 320px) and (max-width: 375px)
             justify-content: center
-    &__board
-        width: 476px
-        height: 476px
-        @media (min-width: 320px) and (max-width: 367px)
-            width: 160px
-            height: 160px
-        @media (min-width: 368px) and (max-width: 1279px)
-            width: 184px
-            height: 184px
-    &__board img
+        &-first
+        &-second
+            display: flex
+            flex-direction: column-reverse
+        &-third
+            display: flex
+            flex-direction: column-reverse
+        &-fourth
+    &__board, &__board img
         width: 476px
         height: 476px
         margin: 0
-        @media (min-width: 320px) and (max-width: 367px)
+        @media (min-width: 320px) and (max-width: 375px)
             width: 160px
             height: 160px
-        @media (min-width: 368px) and (max-width: 1279px)
-            width: 184px
-            height: 184px
+        @media (min-width: 376px) and (max-width: 1279px)
+            width: 188px
+            height: 188px
+
+.connection
+    background: #EEEFF1
+    &__rotate
+        height: 762px
+        display: flex
+        justify-content: space-evenly
+        flex-direction: column
+        align-items: center
+        @media (min-width: 320px) and (max-width: 1279px)
+            height: auto
+    &__headline
+        font: $fontA
+        line-height: 38px
+        text-align: center
+        color: #000000
+    &__text
+        font: $fontB
+        line-height: 26px
+        text-align: center
+        color: #727272
+        margin: 0 30px
+        @media (min-width: 320px) and (max-width: 1279px)
+            line-height: 120%
+    &__form
+        display: flex
+        flex-direction: column
+
+.user__info
+    margin-bottom: 20px
+    display: flex
+    justify-content: space-between
+    @media (min-width: 320px) and (max-width: 1279px)
+        flex-direction: column
+.form
+    &__name, &__mail
+        width: 255px
+        height: 50px
+        border: none
+        outline: none
+        box-sizing: border-box
+        padding-left: 20px
+        @media (min-width: 320px) and (max-width: 342px)
+            width: 320px
+            margin-top: 20px
+        @media (min-width: 343px) and (max-width: 1279px)
+            width: 342px
+            margin-top: 20px
+    &__text
+        width: 540px
+        height: 175px
+        border: none
+        outline: none
+        box-sizing: border-box
+        resize: none
+        padding-left: 20px
+        padding-top: 17px
+        @media (min-width: 320px) and (max-width: 342px)
+            width: 320px
+        @media (min-width: 343px) and (max-width: 1279px)
+            width: 342px
+.button__form
+    width: 190px
+    height: 55px
+    @media (min-width: 320px) and (max-width: 1279px)
+        margin-top: 48px

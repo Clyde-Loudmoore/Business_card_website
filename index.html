@@ -36,7 +36,9 @@
               текстов<br />
               на латинице с начала XVI века.
             </p>
-            <button class="button">НАПИСАТЬ МНЕ</button>
+            <a href="#form">
+              <button class="button">НАПИСАТЬ МНЕ</button>
+            </a>
           </div>
         </section>
       </div>
@@ -134,29 +136,73 @@
 
     <section class="taskboard">
       <div class="taskboard__rotate">
-        <div class="taskboard__board">
-          <img src="/img/Taskboard/even.png" />
+        <div class="taskboard__rotate-first">
+          <div class="taskboard__board">
+            <img src="/img/Taskboard/even.png" />
+          </div>
+          <div class="taskboard__board">
+            <img src="/img/Taskboard/uneven.png" />
+          </div>
         </div>
-        <div class="taskboard__board">
-          <img src="/img/Taskboard/uneven.png" />
+        <div class="taskboard__rotate-second">
+          <div class="taskboard__board">
+            <img src="/img/Taskboard/even.png" />
+          </div>
+          <div class="taskboard__board">
+            <img src="/img/Taskboard/uneven.png" />
+          </div>
         </div>
-        <div class="taskboard__board">
-          <img src="/img/Taskboard/even.png" />
+        <div class="taskboard__rotate-third">
+          <div class="taskboard__board">
+            <img src="/img/Taskboard/uneven.png" />
+          </div>
+          <div class="taskboard__board">
+            <img src="/img/Taskboard/even.png" />
+          </div>
         </div>
-        <div class="taskboard__board">
-          <img src="/img/Taskboard/uneven.png" />
+        <div class="taskboard__rotate-fourth">
+          <div class="taskboard__board">
+            <img src="/img/Taskboard/uneven.png" />
+          </div>
+          <div class="taskboard__board">
+            <img src="/img/Taskboard/even.png" />
+          </div>
         </div>
-        <div class="taskboard__board">
-          <img src="/img/Taskboard/uneven.png" />
-        </div>
-        <div class="taskboard__board">
-          <img src="/img/Taskboard/even.png" />
-        </div>
-        <div class="taskboard__board">
-          <img src="/img/Taskboard/uneven.png" />
-        </div>
-        <div class="taskboard__board">
-          <img src="/img/Taskboard/even.png" />
+      </div>
+    </section>
+
+    <section class="connection">
+      <div class="container">
+        <div class="connection__rotate">
+          <h2 class="connection__headline">Хотите веб-сайт?</h2>
+          <p class="connection__text">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br />
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br />
+            на латинице с начала XVI века.
+          </p>
+          <form action="#" name="user" class="connection__form">
+            <div class="user__info">
+              <input
+                id="form"
+                class="form__name"
+                type="text"
+                maxlength="20"
+                placeholder="Ваше имя"
+              />
+              <input
+                class="form__mail"
+                type="email"
+                maxlength="30"
+                placeholder="Ваш e-mail"
+              />
+            </div>
+            <textarea
+              class="form__text"
+              type="text"
+              placeholder="Сообщение"
+            ></textarea>
+          </form>
+          <button class="button button__form" type="submit">ОТПРАВИТЬ</button>
         </div>
       </div>
     </section>

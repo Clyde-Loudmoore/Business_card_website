@@ -170,6 +170,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #727272;
+  margin: 0 30px;
 }
 .main__projects {
   background: #34547A;
@@ -229,7 +230,13 @@ body {
   width: 555px;
   height: 450px;
 }
-@media (min-width: 320px) and (max-width: 1279px) {
+@media (min-width: 320px) and (max-width: 342px) {
+  .main__skills-photo img {
+    width: 320px;
+    height: 256px;
+  }
+}
+@media (min-width: 343px) and (max-width: 1279px) {
   .main__skills-photo img {
     width: 339px;
     height: 275px;
@@ -294,7 +301,13 @@ body {
   width: 1110px;
   height: 600px;
 }
-@media (min-width: 320px) and (max-width: 1279px) {
+@media (min-width: 320px) and (max-width: 342px) {
+  .main__work-img {
+    width: 320px;
+    height: 166px;
+  }
+}
+@media (min-width: 343px) and (max-width: 1279px) {
   .main__work-img {
     width: 339px;
     height: 185px;
@@ -307,7 +320,16 @@ body {
   top: 250px;
   bottom: 250px;
 }
-@media (min-width: 320px) and (max-width: 1279px) {
+@media (min-width: 320px) and (max-width: 342px) {
+  .main__work-png {
+    width: 56px;
+    height: 56px;
+    left: 130px;
+    right: 50px;
+    top: 60px;
+  }
+}
+@media (min-width: 343px) and (max-width: 1279px) {
   .main__work-png {
     width: 75px;
     height: 75px;
@@ -326,47 +348,140 @@ body {
 @media (min-width: 320px) and (max-width: 1279px) {
   .taskboard {
     height: auto;
+    margin: 34px 0;
   }
 }
 .taskboard__rotate {
   display: flex;
   flex-wrap: wrap;
 }
-@media (min-width: 320px) and (max-width: 367px) {
+@media (min-width: 320px) and (max-width: 375px) {
   .taskboard__rotate {
     justify-content: center;
   }
 }
-.taskboard__board {
-  width: 476px;
-  height: 476px;
+.taskboard__rotate-second {
+  display: flex;
+  flex-direction: column-reverse;
 }
-@media (min-width: 320px) and (max-width: 367px) {
-  .taskboard__board {
-    width: 160px;
-    height: 160px;
-  }
+.taskboard__rotate-third {
+  display: flex;
+  flex-direction: column-reverse;
 }
-@media (min-width: 368px) and (max-width: 1279px) {
-  .taskboard__board {
-    width: 184px;
-    height: 184px;
-  }
-}
-.taskboard__board img {
+.taskboard__board, .taskboard__board img {
   width: 476px;
   height: 476px;
   margin: 0;
 }
-@media (min-width: 320px) and (max-width: 367px) {
-  .taskboard__board img {
+@media (min-width: 320px) and (max-width: 375px) {
+  .taskboard__board, .taskboard__board img {
     width: 160px;
     height: 160px;
   }
 }
-@media (min-width: 368px) and (max-width: 1279px) {
-  .taskboard__board img {
-    width: 184px;
-    height: 184px;
+@media (min-width: 376px) and (max-width: 1279px) {
+  .taskboard__board, .taskboard__board img {
+    width: 188px;
+    height: 188px;
+  }
+}
+
+.connection {
+  background: #EEEFF1;
+}
+.connection__rotate {
+  height: 762px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 1279px) {
+  .connection__rotate {
+    height: auto;
+  }
+}
+.connection__headline {
+  font: normal 500 32px "Roboto";
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+}
+.connection__text {
+  font: normal 400 16px "Roboto";
+  line-height: 26px;
+  text-align: center;
+  color: #727272;
+  margin: 0 30px;
+}
+@media (min-width: 320px) and (max-width: 1279px) {
+  .connection__text {
+    line-height: 120%;
+  }
+}
+.connection__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user__info {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 1279px) {
+  .user__info {
+    flex-direction: column;
+  }
+}
+
+.form__name, .form__mail {
+  width: 255px;
+  height: 50px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+@media (min-width: 320px) and (max-width: 342px) {
+  .form__name, .form__mail {
+    width: 320px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 343px) and (max-width: 1279px) {
+  .form__name, .form__mail {
+    width: 342px;
+    margin-top: 20px;
+  }
+}
+.form__text {
+  width: 540px;
+  height: 175px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  resize: none;
+  padding-left: 20px;
+  padding-top: 17px;
+}
+@media (min-width: 320px) and (max-width: 342px) {
+  .form__text {
+    width: 320px;
+  }
+}
+@media (min-width: 343px) and (max-width: 1279px) {
+  .form__text {
+    width: 342px;
+  }
+}
+
+.button__form {
+  width: 190px;
+  height: 55px;
+}
+@media (min-width: 320px) and (max-width: 1279px) {
+  .button__form {
+    margin-top: 48px;
   }
 }
