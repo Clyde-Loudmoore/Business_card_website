@@ -349,6 +349,7 @@ body {
   .taskboard {
     height: auto;
     margin: 34px 0;
+    justify-content: center;
   }
 }
 .taskboard__rotate {
@@ -384,6 +385,22 @@ body {
     width: 188px;
     height: 188px;
   }
+}
+.taskboard__board-overlay, .taskboard__board img-overlay {
+  position: absolute;
+  top: 200px;
+  left: 180px;
+  display: none;
+}
+.taskboard__board-overlay img, .taskboard__board img-overlay img {
+  width: 100px;
+  height: 57px;
+}
+.taskboard__board {
+  position: relative;
+}
+.taskboard__board:hover .taskboard__board-overlay {
+  display: block;
 }
 
 .connection {

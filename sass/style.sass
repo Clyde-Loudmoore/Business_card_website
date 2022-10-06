@@ -254,6 +254,7 @@ body
     @media (min-width: 320px) and (max-width: 1279px)
         height: auto
         margin: 34px 0
+        justify-content: center
     &__rotate
         display: flex
         flex-wrap: wrap
@@ -277,7 +278,19 @@ body
         @media (min-width: 376px) and (max-width: 1279px)
             width: 188px
             height: 188px
-
+        &-overlay
+            position: absolute
+            top: 200px
+            left: 180px
+            display: none
+        &-overlay img
+            width: 100px
+            height: 57px
+    &__board
+        position: relative
+        &:hover
+            .taskboard__board-overlay
+                display: block
 .connection
     background: #EEEFF1
     &__rotate
