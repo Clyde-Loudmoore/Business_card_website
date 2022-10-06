@@ -305,12 +305,14 @@ body {
   .main__work-img {
     width: 320px;
     height: 166px;
+    margin-bottom: 70px;
   }
 }
 @media (min-width: 343px) and (max-width: 1279px) {
   .main__work-img {
     width: 339px;
     height: 185px;
+    margin-bottom: 70px;
   }
 }
 .main__work-png {
@@ -391,6 +393,11 @@ body {
   top: 200px;
   left: 180px;
   display: none;
+}
+@media (min-width: 320px) and (max-width: 1279px) {
+  .taskboard__board-overlay, .taskboard__board img-overlay {
+    display: none;
+  }
 }
 .taskboard__board-overlay img, .taskboard__board img-overlay img {
   width: 100px;
