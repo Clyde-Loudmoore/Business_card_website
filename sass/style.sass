@@ -7,25 +7,21 @@ body
     margin: 0
 
 .container
-    width: 1130px
+    max-width: 1130px
     margin: 0 auto
     @media (min-width: 320px) and (max-width: 1279px)
         width: auto
 
 .page-header
     background-color: $bgcolor
-    height: 700px
-    padding-top: 57px
+    max-height: 700px
+    padding: 50px 0
     @media (min-width: 320px) and (max-width: 1279px)
         width: 100%
         height: 100%
-
-    // &__nav
-    //     margin-bottom: 150px
-    //     display: flex
-    //     justify-content: space-between
-    //     @media (min-width: 320px) and (max-width: 1279px)
-    //         margin-bottom: 67px
+    &__content-wrapper
+        display: flex
+        justify-content: space-between
     &__logo-container
         width: 96px
         height: 60px
@@ -58,12 +54,15 @@ body
 
 .design-and-layout
     &__content-wrapper
+        background: #EEEFF1
+        padding: 60px 0 140px 0
         display: flex
-        justify-content: space-around
+        justify-content: space-evenly
         align-items: center
         @media (min-width: 320px) and (max-width: 1279px)
             width: auto
             height: auto
+            padding-bottom: 67px
             flex-direction: column
     &__image
         width: 357px
@@ -88,10 +87,10 @@ body
             margin-top: 35px
     &__text
         font: $fontB
-        line-height: 38px
         line-height: 26px
         color: #727272
-        margin: 45px auto
+        padding: 45px 0
+        margin: 0
         @media (min-width: 320px) and (max-width: 1279px)
             font: normal 400 16px
             line-height: 120%
@@ -115,15 +114,18 @@ body
 
 .about-me
     &__content-wrapper
-        height: 366px
         display: flex
         flex-direction: column
         justify-content: center
+    &__info-container
+        max-height: 366px
+        padding: 115px 0 100px 0
     &__info-headline
         font: $fontA
         line-height: 38px
         text-align: center
         color: #000000
+        margin: 0 0 50px 0
     &__info-text
         font: $fontB
         line-height: 26px
@@ -133,26 +135,29 @@ body
 
     &__content-wrapper-blue
         background: #34547A
+        padding: 100px 0
     &__project-images
-        height: 250px
+        max-height: 250px
         display: flex
-        justify-content: space-between
+        justify-content: space-around
         align-items: center
         @media (min-width: 320px) and (max-width: 1279px)
             height: auto
             width: auto
             flex-wrap: wrap
     &__project-image-container
-        width: 141px
-        height: 50px
+        max-width: 141px
+        max-height: 50px
         @media (min-width: 320px) and (max-width: 1279px)
             margin: 45px auto
 
-    &__my-skills-list
-        height: 653px
+    &__skills-list-container
+        max-height: 653px
+        padding: 100px 0
         display: flex
-        justify-content: space-between
+        justify-content: space-around
         align-items: center
+    &__my-skills-list
         @media (min-width: 320px) and (max-width: 1279px)
             height: auto
             margin-top: 82px
@@ -168,15 +173,15 @@ body
         font: $fontB
         line-height: 26px
         color: #727272
-        &-photo img
-            width: 555px
-            height: 450px
-            @media (min-width: 320px) and (max-width: 342px)
-                width: 320px
-                height: 256px
-            @media (min-width: 343px) and (max-width: 1279px)
-                width: 339px
-                height: 275px
+    &__my-photo
+        max-width: 555px
+        max-height: 450px
+        @media (min-width: 320px) and (max-width: 342px)
+            width: 320px
+            height: 256px
+        @media (min-width: 343px) and (max-width: 1279px)
+            width: 339px
+            height: 275px
     &__experience-container
         display: flex
     &__experience
@@ -196,8 +201,8 @@ body
     &__content-wrapper-white
         background: #EEEFF1
     &__my-work-items
-        padding-top: 65px
-        height: 1004px
+        padding: 65px 0 100px 0
+        max-height: 1004px
         display: flex
         flex-direction: column
         align-items: center
@@ -217,8 +222,8 @@ body
     &__work-images-container
         position: relative
     &__work-image
-        width: 1110px
-        height: 600px
+        max-width: 1110px
+        max-height: 600px
         @media (min-width: 320px) and (max-width: 342px)
             width: 320px
             height: 166px
@@ -235,13 +240,11 @@ body
         bottom: 250px
         @media (min-width: 320px) and (max-width: 342px)
             width: 56px
-            height: 56px
             left: 130px
             right: 50px
             top: 60px
         @media (min-width: 343px) and (max-width: 1279px)
             width: 75px
-            height: 75px
             left: 131px
             right: 133px
             top: 55px
@@ -249,7 +252,7 @@ body
 
 .taskboard
     &___content-wrapper
-        height: 1016px
+        max-height: 1016px
         display: flex
         align-items: center
         @media (min-width: 320px) and (max-width: 1279px)
@@ -262,8 +265,8 @@ body
         @media (min-width: 320px) and (max-width: 1279px)
             justify-content: center
     &__picture, &__picture img
-        width: 476px
-        height: 476px
+        max-width: 476px
+        max-height: 476px
         margin: 0
         @media (min-width: 320px) and (max-width: 375px)
             width: 160px
@@ -285,8 +288,8 @@ body
         @media (min-width: 320px) and (max-width: 1279px)
             display: none
     &__picture-overlay img
-        width: 100px
-        height: 57px
+        max-width: 100px
+        max-height: 57px
     &__pictures--flex
         display: flex
         flex-direction: column-reverse
@@ -295,7 +298,7 @@ body
     &__content-wrapper
         background: #EEEFF1
     &__items
-        height: 762px
+        max-height: 762px
         display: flex
         justify-content: space-evenly
         flex-direction: column
@@ -359,12 +362,12 @@ body
 .page-footer
     background: #34547A
     &__author-items
-        height: 151px
+        max-height: 151px
         display: flex
         justify-content: space-between
         align-items: center
         @media (min-width: 320px) and (max-width: 1279px)
-            height: 210px
+            max-height: 210px
             flex-direction: column
             justify-content: space-evenly
     &__name
