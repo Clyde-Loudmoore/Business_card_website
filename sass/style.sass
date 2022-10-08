@@ -12,7 +12,7 @@ body
     @media (min-width: 320px) and (max-width: 1279px)
         width: auto
 
-.header
+.page-header
     background-color: $bgcolor
     height: 700px
     padding-top: 57px
@@ -20,44 +20,44 @@ body
         width: 100%
         height: 100%
 
-    &__nav
-        margin-bottom: 150px
+    // &__nav
+    //     margin-bottom: 150px
+    //     display: flex
+    //     justify-content: space-between
+    //     @media (min-width: 320px) and (max-width: 1279px)
+    //         margin-bottom: 67px
+    &__logo-container
+        width: 96px
+        height: 60px
         display: flex
-        justify-content: space-between
+        align-items: center
         @media (min-width: 320px) and (max-width: 1279px)
-            margin-bottom: 67px
-        &-logo
-            width: 96px
-            height: 60px
-            display: flex
-            align-items: center
-            @media (min-width: 320px) and (max-width: 1279px)
-                display: block
-                position: absolute
-                left: 19px
-                top: 22px
+            display: block
+            position: absolute
+            left: 19px
+            top: 22px
+    &__links-container
+        display: flex
+        align-items: center
+        @media (min-width: 320px) and (max-width: 1279px)
+            display: none
+    &__link-item
+        margin-right: 42px
+        text-decoration: none
+        cursor: pointer
+        font: $fontB
+        letter-spacing: 0.1em
+        color: #000000
+    &__link-item--active
+        margin-right: 42px
+        text-decoration: none
+        cursor: pointer
+        font: $fontB
+        letter-spacing: 0.1em
+        color: #34547A
 
-        &-links
-            display: flex
-            align-items: center
-            @media (min-width: 320px) and (max-width: 1279px)
-                display: none
-        &-a
-            margin-right: 42px
-            text-decoration: none
-            cursor: pointer
-            font: $fontB
-            letter-spacing: 0.1em
-            color: #000000
-        &-b
-            margin-right: 42px
-            text-decoration: none
-            cursor: pointer
-            font: $fontB
-            letter-spacing: 0.1em
-            color: #34547A
-
-    &__stack
+.design-and-layout
+    &__content-wrapper
         display: flex
         justify-content: space-around
         align-items: center
@@ -65,37 +65,37 @@ body
             width: auto
             height: auto
             flex-direction: column
-        &-img img
-            width: 357px
-            height: 233.7px
-            @media (min-width: 320px) and (max-width: 1279px)
-                width: 298px
-                height: 195px
-        &-info
-            display: flex
-            flex-direction: column
-            align-items: flex-start
-            @media (min-width: 320px) and (max-width: 1279px)
-                align-items: center
-        &-headline
-            font: normal 500 48px 'Roboto'
-            line-height: 79px
-            color: #000000
-            margin: 0
-            @media (min-width: 320px) and (max-width: 1279px)
-                font: normal 500 36px 'Roboto'
-                text-align: center
-                margin-top: 35px
-        &-text
-            font: $fontB
-            line-height: 38px
-            line-height: 26px
-            color: #727272
-            margin: 45px auto
-            @media (min-width: 320px) and (max-width: 1279px)
-                font: normal 400 16px
-                line-height: 120%
-                text-align: center
+    &__image
+        width: 357px
+        height: 233.7px
+        @media (min-width: 320px) and (max-width: 1279px)
+            width: 298px
+            height: 195px
+    &__info-container
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        @media (min-width: 320px) and (max-width: 1279px)
+            align-items: center
+    &__headline
+        font: normal 500 48px 'Roboto'
+        line-height: 79px
+        color: #000000
+        margin: 0
+        @media (min-width: 320px) and (max-width: 1279px)
+            font: normal 500 36px 'Roboto'
+            text-align: center
+            margin-top: 35px
+    &__text
+        font: $fontB
+        line-height: 38px
+        line-height: 26px
+        color: #727272
+        margin: 45px auto
+        @media (min-width: 320px) and (max-width: 1279px)
+            font: normal 400 16px
+            line-height: 120%
+            text-align: center
 
 .button
     width: 225px
@@ -113,62 +113,61 @@ body
     @media (min-width: 320px) and (max-width: 1279px)
         margin-bottom: 95px
 
-.main
-    &__about-me
+.about-me
+    &__content-wrapper
         height: 366px
         display: flex
         flex-direction: column
         justify-content: center
-        &__headline
-            font: $fontA
-            line-height: 38px
-            text-align: center
-            color: #000000
-        &__text
-            font: $fontB
-            line-height: 26px
-            text-align: center
-            color: #727272
-            margin: 0 30px
+    &__info-headline
+        font: $fontA
+        line-height: 38px
+        text-align: center
+        color: #000000
+    &__info-text
+        font: $fontB
+        line-height: 26px
+        text-align: center
+        color: #727272
+        margin: 0 30px
 
-    &__projects
+    &__content-wrapper-blue
         background: #34547A
-        &-items
-            height: 250px
-            display: flex
-            justify-content: space-between
-            align-items: center
-            @media (min-width: 320px) and (max-width: 1279px)
-                height: auto
-                width: auto
-                flex-wrap: wrap
-        &-img
-            width: 141px
-            height: 50px
-            @media (min-width: 320px) and (max-width: 1279px)
-                margin: 45px auto
+    &__project-images
+        height: 250px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (min-width: 320px) and (max-width: 1279px)
+            height: auto
+            width: auto
+            flex-wrap: wrap
+    &__project-image-container
+        width: 141px
+        height: 50px
+        @media (min-width: 320px) and (max-width: 1279px)
+            margin: 45px auto
 
-    &__skills
-        &-my
-            height: 653px
-            display: flex
-            justify-content: space-between
-            align-items: center
-            @media (min-width: 320px) and (max-width: 1279px)
-                height: auto
-                margin-top: 82px
-                margin-bottom: 103px
-                flex-direction: column-reverse
-        &-headline
-            font: $fontA
-            line-height: 38px
-            color: #000000
-            @media (min-width: 320px) and (max-width: 1279px)
-                text-align: center
-        &-text
-            font: $fontB
-            line-height: 26px
-            color: #727272
+    &__my-skills-list
+        height: 653px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (min-width: 320px) and (max-width: 1279px)
+            height: auto
+            margin-top: 82px
+            margin-bottom: 103px
+            flex-direction: column-reverse
+    &__skills-headline
+        font: $fontA
+        line-height: 38px
+        color: #000000
+        @media (min-width: 320px) and (max-width: 1279px)
+            text-align: center
+    &__skills-text
+        font: $fontB
+        line-height: 26px
+        color: #727272
         &-photo img
             width: 555px
             height: 450px
@@ -178,99 +177,91 @@ body
             @media (min-width: 343px) and (max-width: 1279px)
                 width: 339px
                 height: 275px
-    &__exp
-        &-block
-            display: flex
-        &-blue
-            width: 349px
-            height: 4px
-            background: #34547A
-            transform: rotate(-0.06deg)
-            @media (min-width: 320px) and (max-width: 1279px)
-                width: 250px
-        &-grey
-            width: 96px
-            height: 4px
-            background: #C4C4C4
-            @media (min-width: 320px) and (max-width: 1279px)
-                width: 60px
+    &__experience-container
+        display: flex
+    &__experience
+        width: 96px
+        height: 4px
+        background: #C4C4C4
+        @media (min-width: 320px) and (max-width: 1279px)
+            width: 60px
+    &__experience--active
+        width: 349px
+        height: 4px
+        background: #34547A
+        transform: rotate(-0.06deg)
+        @media (min-width: 320px) and (max-width: 1279px)
+            width: 250px
 
-    &__work
+    &__content-wrapper-white
         background: #EEEFF1
-        &-items
-            padding-top: 65px
-            height: 1004px
-            display: flex
-            flex-direction: column
-            align-items: center
-            @media (min-width: 320px) and (max-width: 1279px)
-                height: auto
-        &-headline
-            font: $fontA
-            line-height: 38px
-            text-align: center
-            color: #000000
-        &-text
-            font: $fontB
-            line-height: 120%
-            text-align: center
-            color: #727272
-            margin: 30px
-        &-images
-            position: relative
-        &-img
-            width: 1110px
-            height: 600px
-            @media (min-width: 320px) and (max-width: 342px)
-                width: 320px
-                height: 166px
-                margin-bottom: 70px
-            @media (min-width: 343px) and (max-width: 1279px)
-                width: 339px
-                height: 185px
-                margin-bottom: 70px
-        &-png
-            position: absolute
-            left: 505px
-            right: 505px
-            top: 250px
-            bottom: 250px
-            @media (min-width: 320px) and (max-width: 342px)
-                width: 56px
-                height: 56px
-                left: 130px
-                right: 50px
-                top: 60px
-            @media (min-width: 343px) and (max-width: 1279px)
-                width: 75px
-                height: 75px
-                left: 131px
-                right: 133px
-                top: 55px
-                bottom: 55px
+    &__my-work-items
+        padding-top: 65px
+        height: 1004px
+        display: flex
+        flex-direction: column
+        align-items: center
+        @media (min-width: 320px) and (max-width: 1279px)
+            height: auto
+    &__work-headline
+        font: $fontA
+        line-height: 38px
+        text-align: center
+        color: #000000
+    &__work-text
+        font: $fontB
+        line-height: 120%
+        text-align: center
+        color: #727272
+        margin: 30px
+    &__work-images-container
+        position: relative
+    &__work-image
+        width: 1110px
+        height: 600px
+        @media (min-width: 320px) and (max-width: 342px)
+            width: 320px
+            height: 166px
+            margin-bottom: 70px
+        @media (min-width: 343px) and (max-width: 1279px)
+            width: 339px
+            height: 185px
+            margin-bottom: 70px
+    &__work-play
+        position: absolute
+        left: 505px
+        right: 505px
+        top: 250px
+        bottom: 250px
+        @media (min-width: 320px) and (max-width: 342px)
+            width: 56px
+            height: 56px
+            left: 130px
+            right: 50px
+            top: 60px
+        @media (min-width: 343px) and (max-width: 1279px)
+            width: 75px
+            height: 75px
+            left: 131px
+            right: 133px
+            top: 55px
+            bottom: 55px
 
 .taskboard
-    height: 1016px
-    display: flex
-    align-items: center
-    @media (min-width: 320px) and (max-width: 1279px)
-        height: auto
-        margin: 34px 0
-        justify-content: center
-    &__rotate
+    &___content-wrapper
+        height: 1016px
+        display: flex
+        align-items: center
+        @media (min-width: 320px) and (max-width: 1279px)
+            height: auto
+            margin: 34px 0
+            justify-content: center
+    &__pictures-container
         display: flex
         flex-wrap: wrap
         @media (min-width: 320px) and (max-width: 1279px)
             justify-content: center
-        &-first
-        &-second
-            display: flex
-            flex-direction: column-reverse
-        &-third
-            display: flex
-            flex-direction: column-reverse
-        &-fourth
-    &__board, &__board img
+    &__picture, &__picture img
         width: 476px
         height: 476px
         margin: 0
@@ -280,25 +271,30 @@ body
         @media (min-width: 376px) and (max-width: 1279px)
             width: 188px
             height: 188px
-        &-overlay
-            position: absolute
-            top: 200px
-            left: 180px
-            display: none
-            @media (min-width: 320px) and (max-width: 1279px)
-                display: none
-        &-overlay img
-            width: 100px
-            height: 57px
-    &__board
+    &__picture
         position: relative
         &:hover
             opacity: 0.7
-            .taskboard__board-overlay
+            .taskboard__picture-overlay
                 display: block
+    &__picture-overlay
+        position: absolute
+        top: 200px
+        left: 180px
+        display: none
+        @media (min-width: 320px) and (max-width: 1279px)
+            display: none
+    &__picture-overlay img
+        width: 100px
+        height: 57px
+    &__pictures--flex
+        display: flex
+        flex-direction: column-reverse
+
 .connection
-    background: #EEEFF1
-    &__rotate
+    &__content-wrapper
+        background: #EEEFF1
+    &__items
         height: 762px
         display: flex
         justify-content: space-evenly
@@ -322,15 +318,13 @@ body
     &__form
         display: flex
         flex-direction: column
-
-.user__info
-    margin-bottom: 20px
-    display: flex
-    justify-content: space-between
-    @media (min-width: 320px) and (max-width: 1279px)
-        flex-direction: column
-.form
-    &__name, &__mail
+    &__user-info
+        margin-bottom: 20px
+        display: flex
+        justify-content: space-between
+        @media (min-width: 320px) and (max-width: 1279px)
+            flex-direction: column
+    &__form-name, &__form-mail
         width: 255px
         height: 50px
         border: none
@@ -343,7 +337,7 @@ body
         @media (min-width: 343px) and (max-width: 1279px)
             width: 342px
             margin-top: 20px
-    &__text
+    &__form-text
         width: 540px
         height: 175px
         border: none
@@ -356,40 +350,39 @@ body
             width: 320px
         @media (min-width: 343px) and (max-width: 1279px)
             width: 342px
-.button__form
-    width: 190px
-    height: 55px
-    @media (min-width: 320px) and (max-width: 1279px)
-        margin-top: 48px
+    &__form-button
+        width: 190px
+        height: 55px
+        @media (min-width: 320px) and (max-width: 1279px)
+            margin-top: 48px
 
-.footer
+.page-footer
     background: #34547A
-    &__author
-        &-rotate
-            height: 151px
-            display: flex
-            justify-content: space-between
-            align-items: center
-            @media (min-width: 320px) and (max-width: 1279px)
-                height: 210px
-                flex-direction: column
-                justify-content: space-evenly
-        &-name
-            font: normal 500 21px 'Roboto'
-            line-height: 25px
-            color: #FFFFFF
-            @media (min-width: 320px) and (max-width: 1279px)
-                text-align: center
-        &-low
-            font: normal 400 13px 'Roboto'
-            line-height: 21px
-            color: #FFFFFF
-            @media (min-width: 320px) and (max-width: 1279px)
-                text-align: center
-        &-network
-            display: flex
-        &-img img
-            width: 44px
-            height: 23px
-            margin-left: 20px
-            align-items: center
+    &__author-items
+        height: 151px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (min-width: 320px) and (max-width: 1279px)
+            height: 210px
+            flex-direction: column
+            justify-content: space-evenly
+    &__name
+        font: normal 500 21px 'Roboto'
+        line-height: 25px
+        color: #FFFFFF
+        @media (min-width: 320px) and (max-width: 1279px)
+            text-align: center
+    &__low
+        font: normal 400 13px 'Roboto'
+        line-height: 21px
+        color: #FFFFFF
+        @media (min-width: 320px) and (max-width: 1279px)
+            text-align: center
+    &__images-container
+        display: flex
+    &__image img
+        width: 44px
+        height: 23px
+        margin-left: 20px
+        align-items: center
