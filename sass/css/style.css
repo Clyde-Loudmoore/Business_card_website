@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500&display=swap");
 body {
   margin: 0;
 }
@@ -382,13 +383,25 @@ body {
   height: 25%;
   display: flex;
 }
-@media (min-width: 320px) and (max-width: 374px) {
-  .taskboard__pictures-item {
-    width: 50%;
-    height: 50%;
+.taskboard__pictures-item:hover {
+  position: relative;
+}
+.taskboard__pictures-item:hover .taskboard__picture-overlay {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  max-width: 100px;
+  max-height: 57px;
+  z-index: 10;
+}
+@media (min-width: 320px) and (max-width: 1279px) {
+  .taskboard__pictures-item:hover .taskboard__picture-overlay {
+    max-width: 50px;
+    max-height: 28px;
   }
 }
-@media (min-width: 376px) and (max-width: 1279px) {
+@media (min-width: 320px) and (max-width: 1279px) {
   .taskboard__pictures-item {
     width: 50%;
     height: 50%;
@@ -396,11 +409,12 @@ body {
 }
 .taskboard__picture {
   max-width: 100%;
-  margin: 0;
-  padding: 0;
+}
+.taskboard__picture-overlay {
+  display: none;
 }
 @media (min-width: 320px) and (max-width: 1279px) {
-  .taskboard__picture {
+  .taskboard__picture-overlay {
     max-width: 100%;
   }
 }
