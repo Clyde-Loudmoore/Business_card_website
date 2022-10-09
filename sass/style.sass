@@ -25,6 +25,7 @@ body
     &__logo-container
         width: 96px
         height: 60px
+        padding-left: 20px
         display: flex
         align-items: center
         @media (min-width: 320px) and (max-width: 1279px)
@@ -55,15 +56,16 @@ body
 .design-and-layout
     &__content-wrapper
         background: #EEEFF1
-        padding: 60px 0 140px 0
-        display: flex
-        justify-content: space-evenly
-        align-items: center
         @media (min-width: 320px) and (max-width: 1279px)
             width: auto
             height: auto
             padding-bottom: 67px
             flex-direction: column
+    &__items
+        padding: 60px 0 140px 0
+        display: flex
+        justify-content: space-evenly
+        align-items: center
     &__image
         width: 357px
         height: 233.7px
@@ -113,10 +115,6 @@ body
         margin-bottom: 95px
 
 .about-me
-    &__content-wrapper
-        display: flex
-        flex-direction: column
-        justify-content: center
     &__info-container
         max-height: 366px
         padding: 115px 0 100px 0
@@ -218,7 +216,7 @@ body
         line-height: 120%
         text-align: center
         color: #727272
-        margin: 30px
+        padding: 30px
     &__work-images-container
         position: relative
     &__work-image
@@ -265,8 +263,8 @@ body
         @media (min-width: 320px) and (max-width: 1279px)
             justify-content: center
     &__picture, &__picture img
-        max-width: 476px
-        max-height: 476px
+        max-width: 480px
+        // max-height: 480px
         margin: 0
         @media (min-width: 320px) and (max-width: 375px)
             width: 160px
@@ -277,7 +275,6 @@ body
     &__picture
         position: relative
         &:hover
-            opacity: 0.7
             .taskboard__picture-overlay
                 display: block
     &__picture-overlay
