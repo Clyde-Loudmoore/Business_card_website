@@ -355,58 +355,64 @@ body {
 .taskboard__content-wrapper {
   max-height: 1016px;
   padding: 28px 0;
-  display: flex;
-  align-items: center;
+  margin: 0;
 }
 @media (min-width: 320px) and (max-width: 1279px) {
   .taskboard__content-wrapper {
     height: auto;
-    margin: 34px 0;
-    justify-content: center;
+    padding: 34px 0;
   }
 }
 .taskboard__pictures-container {
+  padding: 28px 0;
   display: flex;
   flex-wrap: wrap;
 }
 @media (min-width: 320px) and (max-width: 1279px) {
   .taskboard__pictures-container {
-    justify-content: center;
+    padding: 34px 0;
+    max-width: 376px;
+    margin: auto;
   }
 }
-.taskboard__picture, .taskboard__picture img {
+.taskboard__pictures-item {
+  max-width: 480px;
+  width: 25%;
   max-height: 480px;
+  height: 25%;
+  display: flex;
 }
-@media (min-width: 320px) and (max-width: 1279px) {
-  .taskboard__picture, .taskboard__picture img {
-    max-width: 188px;
-    max-height: 188px;
+@media (min-width: 320px) and (max-width: 374px) {
+  .taskboard__pictures-item {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (min-width: 376px) and (max-width: 1279px) {
+  .taskboard__pictures-item {
+    width: 50%;
+    height: 50%;
   }
 }
 .taskboard__picture {
-  position: relative;
-}
-.taskboard__picture:hover .taskboard__picture-overlay {
-  display: block;
-}
-.taskboard__picture-overlay {
-  position: absolute;
-  top: 200px;
-  left: 180px;
-  display: none;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 @media (min-width: 320px) and (max-width: 1279px) {
-  .taskboard__picture-overlay {
-    display: none;
+  .taskboard__picture {
+    max-width: 100%;
   }
 }
-.taskboard__picture-overlay img {
-  max-width: 100px;
-  max-height: 57px;
+@media (min-width: 320px) and (max-width: 1279px) {
+  .taskboard__pictures-item_order-one {
+    order: 1;
+  }
 }
-.taskboard__pictures--flex {
-  display: flex;
-  flex-direction: column-reverse;
+@media (min-width: 320px) and (max-width: 1279px) {
+  .taskboard__pictures-item_order-two {
+    order: 2;
+  }
 }
 
 .connection__content-wrapper {
@@ -423,6 +429,7 @@ body {
 @media (min-width: 320px) and (max-width: 1279px) {
   .connection__items {
     height: auto;
+    padding: 91px 16px;
   }
 }
 .connection__headline {
