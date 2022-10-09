@@ -85,6 +85,12 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (min-width: 320px) and (max-width: 1279px) {
+  .design-and-layout__items {
+    flex-direction: column;
+    padding: 60px 0 95px 0;
+  }
+}
 .design-and-layout__image {
   width: 357px;
   height: 233.7px;
@@ -148,11 +154,6 @@ body {
 .button:hover {
   background: #3e6594;
 }
-@media (min-width: 320px) and (max-width: 1279px) {
-  .button {
-    margin-bottom: 95px;
-  }
-}
 
 .about-me__info-container {
   max-height: 366px;
@@ -177,15 +178,15 @@ body {
   padding: 100px 0;
 }
 .about-me__project-images {
-  max-height: 250px;
+  min-height: 250px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 @media (min-width: 320px) and (max-width: 1279px) {
   .about-me__project-images {
-    height: auto;
-    width: auto;
+    max-width: 376px;
+    margin: auto;
     flex-wrap: wrap;
   }
 }
@@ -195,7 +196,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 1279px) {
   .about-me__project-image-container {
-    margin: 45px auto;
+    padding-bottom: 90px;
   }
 }
 .about-me__skills-list-container {
@@ -204,6 +205,12 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (min-width: 320px) and (max-width: 1279px) {
+  .about-me__skills-list-container {
+    padding: 100px 18px;
+    flex-direction: column-reverse;
+  }
 }
 @media (min-width: 320px) and (max-width: 1279px) {
   .about-me__my-skills-list {
@@ -221,6 +228,7 @@ body {
 @media (min-width: 320px) and (max-width: 1279px) {
   .about-me__skills-headline {
     text-align: center;
+    margin-top: 0;
   }
 }
 .about-me__skills-text {
@@ -232,13 +240,13 @@ body {
   max-width: 555px;
   max-height: 450px;
 }
-@media (min-width: 320px) and (max-width: 342px) {
+@media (min-width: 320px) and (max-width: 374px) {
   .about-me__my-photo {
-    width: 320px;
-    height: 256px;
+    max-width: 321px;
+    max-height: 257px;
   }
 }
-@media (min-width: 343px) and (max-width: 1279px) {
+@media (min-width: 375px) and (max-width: 1279px) {
   .about-me__my-photo {
     width: 339px;
     height: 275px;
@@ -281,6 +289,7 @@ body {
 @media (min-width: 320px) and (max-width: 1279px) {
   .about-me__my-work-items {
     height: auto;
+    padding: 93px 0 91px 0;
   }
 }
 .about-me__work-headline {
@@ -318,6 +327,7 @@ body {
   }
 }
 .about-me__work-play {
+  width: 100px;
   position: absolute;
   left: 505px;
   right: 505px;
@@ -366,18 +376,11 @@ body {
 }
 .taskboard__picture, .taskboard__picture img {
   max-height: 480px;
-  margin: 0;
 }
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 1279px) {
   .taskboard__picture, .taskboard__picture img {
-    width: 160px;
-    height: 160px;
-  }
-}
-@media (min-width: 376px) and (max-width: 1279px) {
-  .taskboard__picture, .taskboard__picture img {
-    width: 188px;
-    height: 188px;
+    max-width: 188px;
+    max-height: 188px;
   }
 }
 .taskboard__picture {
@@ -542,6 +545,8 @@ body {
 @media (min-width: 320px) and (max-width: 1279px) {
   .page-footer__low {
     text-align: center;
+    padding-bottom: 39px;
+    margin-bottom: 0;
   }
 }
 .page-footer__images-container {
@@ -550,6 +555,6 @@ body {
 .page-footer__image img {
   width: 44px;
   height: 23px;
-  margin-left: 20px;
+  padding-left: 20px;
   align-items: center;
 }
