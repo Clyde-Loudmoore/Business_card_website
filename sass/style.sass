@@ -249,8 +249,9 @@ body
             bottom: 55px
 
 .taskboard
-    &___content-wrapper
+    &__content-wrapper
         max-height: 1016px
+        padding: 28px 0
         display: flex
         align-items: center
         @media (min-width: 320px) and (max-width: 1279px)
@@ -263,8 +264,7 @@ body
         @media (min-width: 320px) and (max-width: 1279px)
             justify-content: center
     &__picture, &__picture img
-        max-width: 480px
-        // max-height: 480px
+        max-height: 480px
         margin: 0
         @media (min-width: 320px) and (max-width: 375px)
             width: 160px
@@ -296,6 +296,7 @@ body
         background: #EEEFF1
     &__items
         max-height: 762px
+        padding: 100px 0
         display: flex
         justify-content: space-evenly
         flex-direction: column
@@ -307,19 +308,22 @@ body
         line-height: 38px
         text-align: center
         color: #000000
+        margin: 0
     &__text
         font: $fontB
         line-height: 26px
         text-align: center
         color: #727272
         margin: 0 30px
+        padding: 50px 0 65px 0
         @media (min-width: 320px) and (max-width: 1279px)
             line-height: 120%
     &__form
+        padding-bottom: 50px
         display: flex
         flex-direction: column
     &__user-info
-        margin-bottom: 20px
+        padding-bottom: 20px
         display: flex
         justify-content: space-between
         @media (min-width: 320px) and (max-width: 1279px)
@@ -358,8 +362,9 @@ body
 
 .page-footer
     background: #34547A
+    max-height: 151px
+    padding: 43px 0
     &__author-items
-        max-height: 151px
         display: flex
         justify-content: space-between
         align-items: center

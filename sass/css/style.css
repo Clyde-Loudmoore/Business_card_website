@@ -342,13 +342,14 @@ body {
   }
 }
 
-.taskboard___content-wrapper {
+.taskboard__content-wrapper {
   max-height: 1016px;
+  padding: 28px 0;
   display: flex;
   align-items: center;
 }
 @media (min-width: 320px) and (max-width: 1279px) {
-  .taskboard___content-wrapper {
+  .taskboard__content-wrapper {
     height: auto;
     margin: 34px 0;
     justify-content: center;
@@ -364,7 +365,7 @@ body {
   }
 }
 .taskboard__picture, .taskboard__picture img {
-  max-width: 480px;
+  max-height: 480px;
   margin: 0;
 }
 @media (min-width: 320px) and (max-width: 375px) {
@@ -410,6 +411,7 @@ body {
 }
 .connection__items {
   max-height: 762px;
+  padding: 100px 0;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -425,6 +427,7 @@ body {
   line-height: 38px;
   text-align: center;
   color: #000000;
+  margin: 0;
 }
 .connection__text {
   font: normal 400 16px "Roboto";
@@ -432,6 +435,7 @@ body {
   text-align: center;
   color: #727272;
   margin: 0 30px;
+  padding: 50px 0 65px 0;
 }
 @media (min-width: 320px) and (max-width: 1279px) {
   .connection__text {
@@ -439,11 +443,12 @@ body {
   }
 }
 .connection__form {
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
 .connection__user-info {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -504,9 +509,10 @@ body {
 
 .page-footer {
   background: #34547A;
+  max-height: 151px;
+  padding: 43px 0;
 }
 .page-footer__author-items {
-  max-height: 151px;
   display: flex;
   justify-content: space-between;
   align-items: center;
