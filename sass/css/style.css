@@ -178,6 +178,11 @@ body {
   background: #34547A;
   padding: 100px 0;
 }
+@media (min-width: 320px) and (max-width: 1279px) {
+  .about-me__content-wrapper-blue {
+    padding: 30px 0;
+  }
+}
 .about-me__project-images {
   min-height: 250px;
   display: flex;
