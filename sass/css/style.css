@@ -389,8 +389,9 @@ body {
 .taskboard__pictures-item:hover .taskboard__picture-overlay {
   display: block;
   position: absolute;
-  top: 40%;
-  left: 36%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 100px;
   max-height: 57px;
   z-index: 10;
