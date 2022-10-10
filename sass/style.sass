@@ -259,20 +259,19 @@ body
 
 .taskboard
     &__content-wrapper
-        max-height: 1016px
-        padding: 28px 0
+        max-height: 1976px
         margin: 0
-        @media (min-width: 320px) and (max-width: 1279px)
-            height: auto
-            padding: 34px 0
+        @media (min-width: 1280px)
+            padding: 28px 0
     &__pictures-container
-        padding: 28px 0
         display: flex
         flex-wrap: wrap
         @media (min-width: 320px) and (max-width: 1279px)
+            max-width: auto
             padding: 34px 0
-            max-width: 376px
             margin: auto
+            justify-content: center
+
     &__pictures-item
         max-width: 480px
         width: 25%
@@ -298,7 +297,7 @@ body
                 @media (min-width: 320px) and (max-width: 1279px)
                     max-width: 50px
                     max-height: 28px
-        @media (min-width: 320px) and (max-width: 1279px)
+        @media (min-width: 320px) and (max-width: 800px)
             width: 50%
             height: 50%
     &__picture
@@ -313,10 +312,10 @@ body
         max-height: 480px
         height: 100%
     &__pictures-item_order-one
-        @media (min-width: 320px) and (max-width: 1279px)
+        @media (min-width: 320px) and (max-width: 799px)
             order: 1
     &__pictures-item_order-two
-        @media (min-width: 320px) and (max-width: 1279px)
+        @media (min-width: 320px) and (max-width: 799px)
             order: 2
 
 .connection
