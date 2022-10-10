@@ -195,9 +195,9 @@ body {
   max-width: 141px;
   max-height: 50px;
 }
-@media (min-width: 320px) and (max-width: 1279px) {
+@media (min-width: 320px) and (max-width: 920px) {
   .about-me__project-image-container {
-    padding-bottom: 90px;
+    padding: 45px 0;
   }
 }
 .about-me__skills-list-container {
