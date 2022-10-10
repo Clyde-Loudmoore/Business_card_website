@@ -184,7 +184,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-@media (min-width: 320px) and (max-width: 1279px) {
+@media (min-width: 320px) and (max-width: 920px) {
   .about-me__project-images {
     max-width: 376px;
     margin: auto;
@@ -406,7 +406,7 @@ body {
     max-height: 28px;
   }
 }
-@media (min-width: 320px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 799px) {
   .taskboard__pictures-item {
     width: 50%;
     height: 50%;
